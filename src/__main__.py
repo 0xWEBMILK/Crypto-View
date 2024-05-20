@@ -7,7 +7,10 @@ from app import server
 
 
 async def main():
+    server.serverInitializate()
+    server.foldersInitializate()
     server.handlerInitializate()
+
     server.run()
 
 
