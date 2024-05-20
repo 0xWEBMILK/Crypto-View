@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "crypto-currency-site"
+version = "0.1.0"
+description = ""
+authors = ["D. Adamson <0xwebmilk@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^3.0.3"
+pydantic = "^2.7.1"
+pydantic-settings = "^2.2.1"
+python-decouple = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
