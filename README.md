@@ -15,5 +15,17 @@ To run the project, follow these steps:
 2. Install dependencies by running ```poetry install``` or ```pip install -r requirements.txt```
 3. Start the server application by running ```python ./__main__.py```
 
+
 ## Contact
 For any questions or suggestions, please contact us via email at 0xwebmilk@gmail.com.
+
+---
+
+### Licence
+```
+This Source Code Form is subject to the terms of the
+Apache License, v. 2.0. If a copyof the Apache License was not distributed with this
+file, You can obtain one at http://www.apache.org/licenses/LICENSE-2.0.
+
+Copyright (c) D. Adamson | 0xWEBMILK
+```
