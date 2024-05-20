@@ -7,9 +7,9 @@ from app import server
 
 
 async def main():
-    server.serverInitializate()
-    server.foldersInitializate()
-    server.handlerInitializate()
+    server.serverInitialise()
+    server.foldersInitialise()
+    server.handlerInitialise()
 
     server.run()
 

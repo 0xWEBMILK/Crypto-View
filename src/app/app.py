@@ -19,11 +19,12 @@ class Server:
 
 
     # Some Initializations
-    def serverInitializate(self) -> None:
+    def serverInitialise(self) -> None:
+        """This function initialises a static server class. It does not require any arguments."""
         self.app = Flask(__name__)
 
     
-    def foldersInitializate(self) -> None:
+    def foldersInitialise(self) -> None:
         template_folder = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "global"))
         static_folder = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "global", "assets"))
 
@@ -31,7 +32,7 @@ class Server:
         self.app.static_folder = static_folder
 
     
-    def handlerInitializate(self) -> None:
+    def handlerInitialise(self) -> None:
         self.app.register_blueprint(home_blueprint)
         self.app.register_blueprint(root_blueprint)
 
