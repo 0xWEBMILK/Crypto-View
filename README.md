@@ -21,11 +21,11 @@ For any questions or suggestions, please contact us via email at 0xwebmilk@gmail
 
 ---
 
-### Licence
+# Licence
 ```
-This Source Code Form is subject to the terms of the
-Apache License, v. 2.0. If a copyof the Apache License was not distributed with this
-file, You can obtain one at http://www.apache.org/licenses/LICENSE-2.0.
+The source code in this project is provided under the MIT License.
+If a copy of the MIT License was not distributed with this file,
+you can obtain one at https://opensource.org/licenses/MIT.
 
 Copyright (c) D. Adamson | 0xWEBMILK
 ```
