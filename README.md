@@ -27,5 +27,5 @@ The source code in this project is provided under the MIT License.
 If a copy of the MIT License was not distributed with this file,
 you can obtain one at https://opensource.org/licenses/MIT.
 
-Copyright (c) D. Adamson | 0xWEBMILK
+Copyright (c) D. Adamson | 0xWEBMILK.
 ```
