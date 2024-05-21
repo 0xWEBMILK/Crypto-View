@@ -1,17 +1,19 @@
 # General modules
 from flask import Flask
+from flask_cors import CORS
 import logging
 import os
 
 
 # Custom modules
-from ..config_reader import server_settings
+from config_reader import server_settings
 
 from .handlers import home_blueprint
 from .handlers import root_blueprint
 
 
 logging.basicConfig(level=logging.INFO)
+
 
 # Main server class
 class Server:
@@ -61,6 +63,25 @@ class Server:
         self.app.register_blueprint(home_blueprint)
         self.app.register_blueprint(root_blueprint)
         self.logger.info('Blueprints registered')
+
+
+    def cors_initialise(self) -> None:
+        """
+        Initializes Cross-Origin Resource Sharing (CORS) for the Flask application.
+
+        This method sets up CORS for the Flask application to allow cross-origin
+        requests. It creates a CORS instance and configures the necessary headers.
+
+        Attributes:
+            self.app (Flask): The Flask application instance.
+            self.cors (CORS): The CORS instance associated with the Flask application.
+
+        Configuration:
+            CORS_HEADERS (str): The headers that are allowed in CORS requests.
+        """
+        self.cors = CORS(self.app)
+        self.app.config['CORS_HEADERS'] = 'Content-Type'
+        self.logger.info('Cross-Origin Resource Sharing initialized')
 
 
     def run(self) -> None:
