@@ -12,6 +12,7 @@ flask = "^3.0.3"
 pydantic = "^2.7.1"
 pydantic-settings = "^2.2.1"
 python-decouple = "^3.8"
+pytest = "^8.2.1"
 
 
 [build-system]
