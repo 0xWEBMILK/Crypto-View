@@ -4,14 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Flask App</title>
+    <title>Crypto-View</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
-    <p id="coinsure">Welcome to Crypto App!</p>
-    <input id="coininput" type="text" placeholder="Enter your coin">
-
+    <div class="container">
+        <h1>Crypto-View</h1>
+        <label for="crypto-select">Choose a cryptocurrency:</label>
+        <input id="crypto-select">
+        <br>
+        <label for="currency-select">Choose a currency:</label>
+        <select id="currency-select">
+            <option value="usd">$ (USD)</option>
+            <option value="gbp">£ (GBP)</option>
+            <option value="rub">₽ (RUB)</option>
+        </select>
+        <br>
+        <div id="crypto-price">Select a cryptocurrency and a currency to see the current price.</div>
+    </div>
     <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 </body>
 
