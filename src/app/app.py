@@ -5,7 +5,7 @@ import os
 
 
 # Custom modules
-from config_reader import server_settings
+from ..config_reader import server_settings
 
 from .handlers import home_blueprint
 from .handlers import root_blueprint
@@ -23,7 +23,7 @@ class Server:
             port (int): Port number to run the server.
             host (str): Host address to run the server.
         """
-        
+
         self.logger = logging.getLogger('ServerLogger')
         self.host = host
         self.port = port
